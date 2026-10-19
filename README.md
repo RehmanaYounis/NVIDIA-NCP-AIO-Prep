@@ -38,6 +38,15 @@ A practical topic is **complete** only when I can explain it, demonstrate it or 
 - `kind`: not installed yet; will be introduced only when its lab is reached
 - GPU-related work: depends on available personal hardware; enterprise-only scenarios will be clearly labeled *simulated*
 
+### Practice environments
+
+| Environment | What it covers | Evidence label |
+| --- | --- | --- |
+| [labs/gpu-local/](labs/gpu-local/README.md) | The RTX 4060 Laptop GPU through WSL2: `nvidia-smi`, GPU containers, a Kubernetes GPU pod | Real |
+| [labs/cloud-gpu/](labs/cloud-gpu/README.md) | A scripted ~3-hour session on a rented A100/H100: MIG, DCGM, Slurm GRES, GPU Operator | Real |
+
+Problems are public. Solutions for the labs live in a separate **private** repository, `NVIDIA-NCP-AIO-Prep-solutions`, at the same path as each lab's `README.md`.
+
 **Isolation rule:** Never use or copy files, credentials, kubeconfig, SSH keys, or projects from my separate work WSL distribution (`Ubuntu-20.04`). Do not change shared Windows/Docker settings without reviewing the impact.
 
 ## Learning roadmap
