@@ -38,6 +38,16 @@ A practical topic is **complete** only when I can explain it, demonstrate it or 
 - `kind`: not installed yet; will be introduced only when its lab is reached
 - GPU-related work: depends on available personal hardware; enterprise-only scenarios will be clearly labeled *simulated*
 
+### Practice environments
+
+| Environment | What it covers | Evidence label |
+| --- | --- | --- |
+| [simulator/](simulator/README.md): `aiolab` | A broken DGX H100 + BCM cluster to fix with real commands (BCM, Slurm, Kubernetes/GPU Operator, DCGM, MIG, InfiniBand, NGC), plus timed blueprint-weighted mock exams | *Simulated* |
+| [labs/gpu-local/](labs/gpu-local/README.md) | The RTX 4060 Laptop GPU through WSL2: `nvidia-smi`, GPU containers, a Kubernetes GPU pod | Real |
+| [labs/cloud-gpu/](labs/cloud-gpu/README.md) | A scripted ~3-hour session on a rented A100/H100: MIG, DCGM, Slurm GRES, GPU Operator | Real |
+
+Problems are public. Solutions, explanations and exam answer keys live in a separate **private** repository, `NVIDIA-NCP-AIO-Prep-solutions`; clone it next to this one. The simulator finds it automatically, and lab solutions are at `labs/.../SOLUTION.md` inside it.
+
 **Isolation rule:** Never use or copy files, credentials, kubeconfig, SSH keys, or projects from my separate work WSL distribution (`Ubuntu-20.04`). Do not change shared Windows/Docker settings without reviewing the impact.
 
 ## Learning roadmap
